@@ -7,7 +7,7 @@
     <referencedLibrary type="PYTHON" name="utils" path="qaxperience-2020/testresources/utils/utils.py" dynamic="false"/>
     <referencedLibrary type="PYTHON" name="utilsMask" path="qaxperience-2020/testresources/utils/utilsMask.py" dynamic="false"/>
     <pythonpath>
-        <path location="C:\@Automação\workspace\qaxperience-2020"/>
+        <path location="C:\Robot\testealta"/>
     </pythonpath>
     <classpath/>
     <excludedForValidation/>
