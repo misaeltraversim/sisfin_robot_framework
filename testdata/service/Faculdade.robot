@@ -2,12 +2,9 @@
 Resource        ${EXECDIR}/resources/commons/Mainframe.robot
 Resource        ${EXECDIR}/testdata/dao/Faculdade.robot
 
-***Variables***
-${sistema}      F
-${posicao_x}    12
-${posicao_y}    34
+*** Variables ***
 
-***Keywords***
+*** Keywords ***
 
 Informar Faculdade
     #Selecionar Faculdade    ${sistema}    ${posicao_x}   ${posicao_y}

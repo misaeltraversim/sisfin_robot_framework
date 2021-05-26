@@ -1,9 +1,9 @@
 *** Settings ***
 Resource        ${EXECDIR}/resources/commons/Mainframe.robot
 
-***Variables***
+*** Variables ***
 
-***Keywords***
+*** Keywords ***
 Selecionar Faculdade
     [Arguments]          ${dado}   ${x}   ${y}
     Digitar Na Posicao   ${dado}   ${x}   ${y}

@@ -2,12 +2,12 @@
 Resource        ${EXECDIR}/resources/commons/Mainframe.robot
 Resource        ${EXECDIR}/testdata/dao/LoginDAO.robot
 
-***Variables***
+*** Variables ***
 ${sistema}      phonbook
 ${posicao_x}    24
 ${posicao_y}    2
 
-***Keywords***
+*** Keywords ***
 Logar No Terminal
     #Abrir Terminal
     #Sleep  3
