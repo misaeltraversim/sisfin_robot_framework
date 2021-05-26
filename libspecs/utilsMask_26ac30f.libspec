@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="utilsMask" type="library" format="ROBOT" generated="20200406 21:35:49">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``utilsMask``.</doc>
+<kw name="Adiciona Caracteres">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Apenas Digitos">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Cgc Apenas Digitos">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Complete Zero To Left">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Cpf Completo">
+<arguments>
+<arg>cpf</arg>
+<arg>dig</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Digest">
+<arguments>
+<arg>key</arg>
+<arg>msg</arg>
+<arg>digest</arg>
+</arguments>
+<doc>Fast inline implementation of HMAC
+
+key:    key for the keyed hash object.
+msg:    input message
+digest: A hash name suitable for hashlib.new() for best performance. *OR*
+        A hashlib constructor returning a new hash object. *OR*
+        A module supporting PEP 247.
+
+Note: key and msg must be a bytes or bytearray objects.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Cnpj Sem Mascara Sem Dv">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Codigo Cliente Completa Zeros">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Cpf Apenas Digitos">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Cpf Parametro Banco">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Decimal">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Decimal Float">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Faixa De Portes">
+<arguments>
+<arg>arg</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Agencia">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Agencia String Limpa">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Capital">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cep">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cep Trim">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cep Trim Checa Zero">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cnpj">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cnpj Trim">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cod Municipio">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Codigo Cliente">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Codigo Cliente Pj">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Codigo Cliente Trim">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Codigo Cliente Trim Tela Espaco">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cpf">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cpf Conjuge">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Cpf Trim">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Data">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Data Float">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Data Invertida">
+<arguments>
+<arg>arg</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Data Normal">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Data Trim">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Data Trim Checa Zero">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Mascara Hora">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Formatar Qt Dreg">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Inverter Data">
+<arguments>
+<arg>arg</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Inverter Data Am">
+<arguments>
+<arg>arg</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Remove Primeiros Caracteres">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Remove Ultimos Caracteres">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Remove Ultimos Caracteres Float">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Replace Ponto Por Virgula">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>

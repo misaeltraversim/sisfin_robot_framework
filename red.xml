@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="Mainframe3270" path="C:/python37/Lib/site-packages/Mainframe3270/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="DatabaseLibrary" path="C:/python37/Lib/site-packages/DatabaseLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="utils" path="qaxperience-2020/testresources/utils/utils.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="utilsMask" path="qaxperience-2020/testresources/utils/utilsMask.py" dynamic="false"/>
+    <pythonpath>
+        <path location="C:\@Automação\workspace\qaxperience-2020"/>
+    </pythonpath>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

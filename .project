@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>qaxperience-2020</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.robotframework.ide.eclipse.main.plugin.robotLibrariesBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/Mainframe3270.py</name>
+			<type>1</type>
+			<location>C:/python37/Lib/site-packages/Mainframe3270/source/x3270.py</location>
+		</link>
+	</linkedResources>
+</projectDescription>

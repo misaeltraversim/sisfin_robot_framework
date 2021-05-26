@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="utils" type="library" format="ROBOT" generated="20200406 21:35:49">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``utils``.</doc>
+<kw name="Adicionar Zero Esquerda">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Assassinar Obj">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Auto Str">
+<arguments>
+<arg>cls</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Compara Valores">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Is Empty">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Log">
+<arguments>
+<arg>*allargs</arg>
+</arguments>
+<doc>Write a log message, if there is a log file.
+
+Even though this function is called initlog(), you should always
+use log(); log is a variable that is set either to initlog
+(initially), to dolog (once the log file has been opened), or to
+nolog (when logging is disabled).
+
+The first argument is a format string; the remaining arguments (if
+any) are arguments to the % operator, so e.g.
+    log("%s: %s", "a", "b")
+will write "a: b" to the log file, followed by a newline.
+
+If the global logfp is not None, it should be a file object to
+which log data is written.
+
+If the global logfp is None, the global logfile may be a string
+giving a filename to open, in append mode.  This file should be
+world writable!!!  If the file can't be opened, logging is
+silently disabled (since there is no safe place where we could
+send an error message).</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Remove Espaco">
+<arguments>
+<arg>instring</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Retira Elemento Lista">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
