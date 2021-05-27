@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.2 (Python 3.9.5 on win32)" generated="20210526 23:04:26.896" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.2 (Python 3.9.5 on win32)" generated="20210526 23:36:39.883" rpa="false" schemaversion="2">
 <suite id="s1" name="Testcase" source="C:\Robot\testealta\testcase">
 <suite id="s1-s1" name="SuiteTeste" source="C:\Robot\testealta\testcase\SuiteTeste.robot">
-<test id="s1-s1-t1" name="CT001 - Logar">
+<kw name="Conectar Emulador" library="Base" type="SETUP">
 <kw name="Open Connection" library="Mainframe3270">
 <arg>teague-tammvs1.tamu.edu</arg>
 <arg>port= 992</arg>
 <doc>Create a connection with IBM3270 mainframe with the default port 23. To make a connection with the mainframe
 you only must inform the Host. You can pass the Logical Unit Name and the Port as optional.</doc>
-<status status="PASS" starttime="20210526 23:04:26.961" endtime="20210526 23:04:27.476"/>
+<status status="PASS" starttime="20210526 23:36:39.948" endtime="20210526 23:36:40.469"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210526 23:04:37.485" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20210526 23:04:27.476" endtime="20210526 23:04:37.485"/>
+<msg timestamp="20210526 23:36:50.482" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210526 23:36:40.469" endtime="20210526 23:36:50.482"/>
 </kw>
-<kw name="Logar No Terminal" library="LoginTC">
-<kw name="Acessar o Sistema" library="LoginData">
+<status status="PASS" starttime="20210526 23:36:39.948" endtime="20210526 23:36:50.482"/>
+</kw>
+<test id="s1-s1-t1" name="CT001 - Logar">
+<kw name="Informar Sistema" library="Sistema">
+<kw name="Acessar o Sistema" library="SistemaData">
 <arg>${sistema}</arg>
 <arg>${posicao_x}</arg>
 <arg>${posicao_y}</arg>
@@ -34,68 +37,68 @@ you only must inform the Host. You can pass the Logical Unit Name and the Port a
 <doc>Delete a entire contents in field at current cursor location and positions
 cursor at beginning of field. If you want to delete a field that is in
 another position, simply pass the coordinates "ypos"/"xpos" of any part of the field.</doc>
-<status status="PASS" starttime="20210526 23:04:37.491" endtime="20210526 23:04:37.493"/>
+<status status="PASS" starttime="20210526 23:36:50.490" endtime="20210526 23:36:50.492"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:37.489" endtime="20210526 23:04:37.493"/>
+<status status="PASS" starttime="20210526 23:36:50.488" endtime="20210526 23:36:50.492"/>
 </kw>
 <kw name="Write Bare In Position" library="Mainframe3270">
 <arg>${text}</arg>
 <arg>${y}</arg>
 <arg>${x}</arg>
 <doc>Send only the string to the screen at screen co-ordinates "ypos"/"xpos".</doc>
-<status status="PASS" starttime="20210526 23:04:37.493" endtime="20210526 23:04:37.495"/>
+<status status="PASS" starttime="20210526 23:36:50.492" endtime="20210526 23:36:50.498"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:37.489" endtime="20210526 23:04:37.495"/>
+<status status="PASS" starttime="20210526 23:36:50.486" endtime="20210526 23:36:50.498"/>
 </kw>
 <kw name="Transmitir" library="Mainframe">
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:37.495" level="INFO" html="true">&lt;iframe src="./screenshot_1622081077495.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:37.495" endtime="20210526 23:04:37.495"/>
+<msg timestamp="20210526 23:36:50.502" level="INFO" html="true">&lt;iframe src="./screenshot_1622083010500.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:50.500" endtime="20210526 23:36:50.502"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:37.495" endtime="20210526 23:04:37.495"/>
+<status status="PASS" starttime="20210526 23:36:50.500" endtime="20210526 23:36:50.502"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:37.495" endtime="20210526 23:04:38.213"/>
+<status status="PASS" starttime="20210526 23:36:50.502" endtime="20210526 23:36:51.200"/>
 </kw>
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:38.217" level="INFO" html="true">&lt;iframe src="./screenshot_1622081078214.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:38.214" endtime="20210526 23:04:38.217"/>
+<msg timestamp="20210526 23:36:51.204" level="INFO" html="true">&lt;iframe src="./screenshot_1622083011200.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:51.200" endtime="20210526 23:36:51.204"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:38.213" endtime="20210526 23:04:38.217"/>
+<status status="PASS" starttime="20210526 23:36:51.200" endtime="20210526 23:36:51.204"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:37.495" endtime="20210526 23:04:38.218"/>
+<status status="PASS" starttime="20210526 23:36:50.498" endtime="20210526 23:36:51.204"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:37.487" endtime="20210526 23:04:38.219"/>
+<status status="PASS" starttime="20210526 23:36:50.486" endtime="20210526 23:36:51.206"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:37.487" endtime="20210526 23:04:38.219"/>
+<status status="PASS" starttime="20210526 23:36:50.484" endtime="20210526 23:36:51.206"/>
 </kw>
 <doc>Este caso de teste tem como objetivo validar o login.</doc>
 <tag>Fluxo Principal</tag>
-<status status="PASS" starttime="20210526 23:04:26.961" endtime="20210526 23:04:38.219"/>
+<status status="PASS" starttime="20210526 23:36:50.484" endtime="20210526 23:36:51.206"/>
 </test>
 <test id="s1-s1-t2" name="CT002 - Selecionar Faculdade">
 <kw name="Informar Faculdade" library="Faculdade">
 <kw name="Log To Console" library="BuiltIn">
 <arg>${faculdade}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210526 23:04:38.225" endtime="20210526 23:04:38.227"/>
+<status status="PASS" starttime="20210526 23:36:51.212" endtime="20210526 23:36:51.212"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${faculdadePosicao_x}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210526 23:04:38.227" endtime="20210526 23:04:38.227"/>
+<status status="PASS" starttime="20210526 23:36:51.212" endtime="20210526 23:36:51.214"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${faculdadePosicao_y}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210526 23:04:38.227" endtime="20210526 23:04:38.231"/>
+<status status="PASS" starttime="20210526 23:36:51.214" endtime="20210526 23:36:51.214"/>
 </kw>
 <kw name="Digitar Faculdade" library="FaculdadeData">
 <arg>${faculdade}</arg>
@@ -114,47 +117,47 @@ default folder is the log folder of RobotFramework, if you want change see the `
 <doc>Delete a entire contents in field at current cursor location and positions
 cursor at beginning of field. If you want to delete a field that is in
 another position, simply pass the coordinates "ypos"/"xpos" of any part of the field.</doc>
-<status status="PASS" starttime="20210526 23:04:38.235" endtime="20210526 23:04:38.239"/>
+<status status="PASS" starttime="20210526 23:36:51.218" endtime="20210526 23:36:51.218"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:38.235" endtime="20210526 23:04:38.239"/>
+<status status="PASS" starttime="20210526 23:36:51.218" endtime="20210526 23:36:51.218"/>
 </kw>
 <kw name="Write Bare In Position" library="Mainframe3270">
 <arg>${text}</arg>
 <arg>${y}</arg>
 <arg>${x}</arg>
 <doc>Send only the string to the screen at screen co-ordinates "ypos"/"xpos".</doc>
-<status status="PASS" starttime="20210526 23:04:38.239" endtime="20210526 23:04:38.241"/>
+<status status="PASS" starttime="20210526 23:36:51.218" endtime="20210526 23:36:51.220"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:38.233" endtime="20210526 23:04:38.241"/>
+<status status="PASS" starttime="20210526 23:36:51.216" endtime="20210526 23:36:51.220"/>
 </kw>
 <kw name="Transmitir" library="Mainframe">
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:38.243" level="INFO" html="true">&lt;iframe src="./screenshot_1622081078243.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:38.243" endtime="20210526 23:04:38.243"/>
+<msg timestamp="20210526 23:36:51.220" level="INFO" html="true">&lt;iframe src="./screenshot_1622083011220.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:51.220" endtime="20210526 23:36:51.222"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:38.241" endtime="20210526 23:04:38.243"/>
+<status status="PASS" starttime="20210526 23:36:51.220" endtime="20210526 23:36:51.222"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:38.243" endtime="20210526 23:04:39.009"/>
+<status status="PASS" starttime="20210526 23:36:51.222" endtime="20210526 23:36:51.939"/>
 </kw>
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:39.013" level="INFO" html="true">&lt;iframe src="./screenshot_1622081079009.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:39.009" endtime="20210526 23:04:39.013"/>
+<msg timestamp="20210526 23:36:51.942" level="INFO" html="true">&lt;iframe src="./screenshot_1622083011940.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:51.940" endtime="20210526 23:36:51.942"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.009" endtime="20210526 23:04:39.013"/>
+<status status="PASS" starttime="20210526 23:36:51.939" endtime="20210526 23:36:51.943"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:38.241" endtime="20210526 23:04:39.013"/>
+<status status="PASS" starttime="20210526 23:36:51.220" endtime="20210526 23:36:51.943"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:38.231" endtime="20210526 23:04:39.013"/>
+<status status="PASS" starttime="20210526 23:36:51.214" endtime="20210526 23:36:51.943"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:38.225" endtime="20210526 23:04:39.015"/>
+<status status="PASS" starttime="20210526 23:36:51.210" endtime="20210526 23:36:51.944"/>
 </kw>
 <kw name="Informar Sobrenome" library="Faculdade">
 <kw name="Digitar Sobrenome" library="FaculdadeData">
@@ -174,47 +177,47 @@ default folder is the log folder of RobotFramework, if you want change see the `
 <doc>Delete a entire contents in field at current cursor location and positions
 cursor at beginning of field. If you want to delete a field that is in
 another position, simply pass the coordinates "ypos"/"xpos" of any part of the field.</doc>
-<status status="PASS" starttime="20210526 23:04:39.021" endtime="20210526 23:04:39.021"/>
+<status status="PASS" starttime="20210526 23:36:51.948" endtime="20210526 23:36:51.950"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.019" endtime="20210526 23:04:39.021"/>
+<status status="PASS" starttime="20210526 23:36:51.948" endtime="20210526 23:36:51.950"/>
 </kw>
 <kw name="Write Bare In Position" library="Mainframe3270">
 <arg>${text}</arg>
 <arg>${y}</arg>
 <arg>${x}</arg>
 <doc>Send only the string to the screen at screen co-ordinates "ypos"/"xpos".</doc>
-<status status="PASS" starttime="20210526 23:04:39.021" endtime="20210526 23:04:39.021"/>
+<status status="PASS" starttime="20210526 23:36:51.950" endtime="20210526 23:36:51.952"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.017" endtime="20210526 23:04:39.021"/>
+<status status="PASS" starttime="20210526 23:36:51.946" endtime="20210526 23:36:51.952"/>
 </kw>
 <kw name="Transmitir" library="Mainframe">
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:39.023" level="INFO" html="true">&lt;iframe src="./screenshot_1622081079023.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:39.023" endtime="20210526 23:04:39.023"/>
+<msg timestamp="20210526 23:36:51.956" level="INFO" html="true">&lt;iframe src="./screenshot_1622083011954.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:51.954" endtime="20210526 23:36:51.956"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.021" endtime="20210526 23:04:39.023"/>
+<status status="PASS" starttime="20210526 23:36:51.954" endtime="20210526 23:36:51.956"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:39.023" endtime="20210526 23:04:39.762"/>
+<status status="PASS" starttime="20210526 23:36:51.956" endtime="20210526 23:36:52.674"/>
 </kw>
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:39.766" level="INFO" html="true">&lt;iframe src="./screenshot_1622081079762.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:39.762" endtime="20210526 23:04:39.766"/>
+<msg timestamp="20210526 23:36:52.678" level="INFO" html="true">&lt;iframe src="./screenshot_1622083012674.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:52.674" endtime="20210526 23:36:52.678"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.762" endtime="20210526 23:04:39.766"/>
+<status status="PASS" starttime="20210526 23:36:52.674" endtime="20210526 23:36:52.678"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.021" endtime="20210526 23:04:39.766"/>
+<status status="PASS" starttime="20210526 23:36:51.954" endtime="20210526 23:36:52.678"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.015" endtime="20210526 23:04:39.766"/>
+<status status="PASS" starttime="20210526 23:36:51.944" endtime="20210526 23:36:52.678"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.015" endtime="20210526 23:04:39.766"/>
+<status status="PASS" starttime="20210526 23:36:51.944" endtime="20210526 23:36:52.680"/>
 </kw>
 <kw name="Informar Sobrenome2" library="Faculdade">
 <kw name="Digitar Sobrenome2" library="FaculdadeData">
@@ -234,47 +237,47 @@ default folder is the log folder of RobotFramework, if you want change see the `
 <doc>Delete a entire contents in field at current cursor location and positions
 cursor at beginning of field. If you want to delete a field that is in
 another position, simply pass the coordinates "ypos"/"xpos" of any part of the field.</doc>
-<status status="PASS" starttime="20210526 23:04:39.772" endtime="20210526 23:04:39.774"/>
+<status status="PASS" starttime="20210526 23:36:52.682" endtime="20210526 23:36:52.682"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.772" endtime="20210526 23:04:39.774"/>
+<status status="PASS" starttime="20210526 23:36:52.682" endtime="20210526 23:36:52.682"/>
 </kw>
 <kw name="Write Bare In Position" library="Mainframe3270">
 <arg>${text}</arg>
 <arg>${y}</arg>
 <arg>${x}</arg>
 <doc>Send only the string to the screen at screen co-ordinates "ypos"/"xpos".</doc>
-<status status="PASS" starttime="20210526 23:04:39.774" endtime="20210526 23:04:39.774"/>
+<status status="PASS" starttime="20210526 23:36:52.682" endtime="20210526 23:36:52.684"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.770" endtime="20210526 23:04:39.776"/>
+<status status="PASS" starttime="20210526 23:36:52.680" endtime="20210526 23:36:52.684"/>
 </kw>
 <kw name="Transmitir" library="Mainframe">
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:39.776" level="INFO" html="true">&lt;iframe src="./screenshot_1622081079776.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:39.776" endtime="20210526 23:04:39.776"/>
+<msg timestamp="20210526 23:36:52.684" level="INFO" html="true">&lt;iframe src="./screenshot_1622083012684.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:52.684" endtime="20210526 23:36:52.684"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.776" endtime="20210526 23:04:39.776"/>
+<status status="PASS" starttime="20210526 23:36:52.684" endtime="20210526 23:36:52.684"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:39.776" endtime="20210526 23:04:40.533"/>
+<status status="PASS" starttime="20210526 23:36:52.684" endtime="20210526 23:36:53.411"/>
 </kw>
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:40.537" level="INFO" html="true">&lt;iframe src="./screenshot_1622081080533.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:40.533" endtime="20210526 23:04:40.537"/>
+<msg timestamp="20210526 23:36:53.411" level="INFO" html="true">&lt;iframe src="./screenshot_1622083013411.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:53.411" endtime="20210526 23:36:53.411"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:40.533" endtime="20210526 23:04:40.537"/>
+<status status="PASS" starttime="20210526 23:36:53.411" endtime="20210526 23:36:53.411"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.776" endtime="20210526 23:04:40.537"/>
+<status status="PASS" starttime="20210526 23:36:52.684" endtime="20210526 23:36:53.411"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.768" endtime="20210526 23:04:40.537"/>
+<status status="PASS" starttime="20210526 23:36:52.680" endtime="20210526 23:36:53.413"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:39.768" endtime="20210526 23:04:40.537"/>
+<status status="PASS" starttime="20210526 23:36:52.680" endtime="20210526 23:36:53.413"/>
 </kw>
 <kw name="Informar Action" library="Faculdade">
 <kw name="Digitar Action" library="FaculdadeData">
@@ -294,51 +297,51 @@ default folder is the log folder of RobotFramework, if you want change see the `
 <doc>Delete a entire contents in field at current cursor location and positions
 cursor at beginning of field. If you want to delete a field that is in
 another position, simply pass the coordinates "ypos"/"xpos" of any part of the field.</doc>
-<status status="PASS" starttime="20210526 23:04:40.539" endtime="20210526 23:04:40.539"/>
+<status status="PASS" starttime="20210526 23:36:53.413" endtime="20210526 23:36:53.415"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:40.539" endtime="20210526 23:04:40.541"/>
+<status status="PASS" starttime="20210526 23:36:53.413" endtime="20210526 23:36:53.415"/>
 </kw>
 <kw name="Write Bare In Position" library="Mainframe3270">
 <arg>${text}</arg>
 <arg>${y}</arg>
 <arg>${x}</arg>
 <doc>Send only the string to the screen at screen co-ordinates "ypos"/"xpos".</doc>
-<status status="PASS" starttime="20210526 23:04:40.541" endtime="20210526 23:04:40.541"/>
+<status status="PASS" starttime="20210526 23:36:53.415" endtime="20210526 23:36:53.415"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:40.539" endtime="20210526 23:04:40.541"/>
+<status status="PASS" starttime="20210526 23:36:53.413" endtime="20210526 23:36:53.415"/>
 </kw>
 <kw name="Transmitir" library="Mainframe">
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:40.543" level="INFO" html="true">&lt;iframe src="./screenshot_1622081080541.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:40.541" endtime="20210526 23:04:40.543"/>
+<msg timestamp="20210526 23:36:53.417" level="INFO" html="true">&lt;iframe src="./screenshot_1622083013417.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:53.415" endtime="20210526 23:36:53.417"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:40.541" endtime="20210526 23:04:40.543"/>
+<status status="PASS" starttime="20210526 23:36:53.415" endtime="20210526 23:36:53.417"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:40.543" endtime="20210526 23:04:41.296"/>
+<status status="PASS" starttime="20210526 23:36:53.417" endtime="20210526 23:36:54.145"/>
 </kw>
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:41.300" level="INFO" html="true">&lt;iframe src="./screenshot_1622081081296.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:41.296" endtime="20210526 23:04:41.300"/>
+<msg timestamp="20210526 23:36:54.149" level="INFO" html="true">&lt;iframe src="./screenshot_1622083014145.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:54.145" endtime="20210526 23:36:54.149"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:41.296" endtime="20210526 23:04:41.300"/>
+<status status="PASS" starttime="20210526 23:36:54.145" endtime="20210526 23:36:54.149"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:40.541" endtime="20210526 23:04:41.300"/>
+<status status="PASS" starttime="20210526 23:36:53.415" endtime="20210526 23:36:54.149"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:41.300" endtime="20210526 23:04:42.062"/>
+<status status="PASS" starttime="20210526 23:36:54.149" endtime="20210526 23:36:54.882"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:40.539" endtime="20210526 23:04:42.062"/>
+<status status="PASS" starttime="20210526 23:36:53.413" endtime="20210526 23:36:54.882"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:40.537" endtime="20210526 23:04:42.062"/>
+<status status="PASS" starttime="20210526 23:36:53.413" endtime="20210526 23:36:54.882"/>
 </kw>
 <kw name="Informar Action - B" library="Faculdade">
 <kw name="Digitar Action - B" library="FaculdadeData">
@@ -358,51 +361,51 @@ default folder is the log folder of RobotFramework, if you want change see the `
 <doc>Delete a entire contents in field at current cursor location and positions
 cursor at beginning of field. If you want to delete a field that is in
 another position, simply pass the coordinates "ypos"/"xpos" of any part of the field.</doc>
-<status status="PASS" starttime="20210526 23:04:42.068" endtime="20210526 23:04:42.070"/>
+<status status="PASS" starttime="20210526 23:36:54.888" endtime="20210526 23:36:54.890"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.068" endtime="20210526 23:04:42.070"/>
+<status status="PASS" starttime="20210526 23:36:54.886" endtime="20210526 23:36:54.890"/>
 </kw>
 <kw name="Write Bare In Position" library="Mainframe3270">
 <arg>${text}</arg>
 <arg>${y}</arg>
 <arg>${x}</arg>
 <doc>Send only the string to the screen at screen co-ordinates "ypos"/"xpos".</doc>
-<status status="PASS" starttime="20210526 23:04:42.070" endtime="20210526 23:04:42.072"/>
+<status status="PASS" starttime="20210526 23:36:54.890" endtime="20210526 23:36:54.890"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.066" endtime="20210526 23:04:42.072"/>
+<status status="PASS" starttime="20210526 23:36:54.886" endtime="20210526 23:36:54.890"/>
 </kw>
 <kw name="Transmitir" library="Mainframe">
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:42.072" level="INFO" html="true">&lt;iframe src="./screenshot_1622081082072.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:42.072" endtime="20210526 23:04:42.072"/>
+<msg timestamp="20210526 23:36:54.892" level="INFO" html="true">&lt;iframe src="./screenshot_1622083014890.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:54.890" endtime="20210526 23:36:54.892"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.072" endtime="20210526 23:04:42.072"/>
+<status status="PASS" starttime="20210526 23:36:54.890" endtime="20210526 23:36:54.892"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:42.072" endtime="20210526 23:04:42.821"/>
+<status status="PASS" starttime="20210526 23:36:54.892" endtime="20210526 23:36:55.614"/>
 </kw>
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:42.825" level="INFO" html="true">&lt;iframe src="./screenshot_1622081082823.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:42.821" endtime="20210526 23:04:42.825"/>
+<msg timestamp="20210526 23:36:55.618" level="INFO" html="true">&lt;iframe src="./screenshot_1622083015614.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:55.614" endtime="20210526 23:36:55.618"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.821" endtime="20210526 23:04:42.825"/>
+<status status="PASS" starttime="20210526 23:36:55.614" endtime="20210526 23:36:55.618"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.072" endtime="20210526 23:04:42.825"/>
+<status status="PASS" starttime="20210526 23:36:54.890" endtime="20210526 23:36:55.618"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.066" endtime="20210526 23:04:42.825"/>
+<status status="PASS" starttime="20210526 23:36:54.884" endtime="20210526 23:36:55.618"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.064" endtime="20210526 23:04:42.827"/>
+<status status="PASS" starttime="20210526 23:36:54.884" endtime="20210526 23:36:55.618"/>
 </kw>
 <doc>Este caso de teste tem como objetivo validar quando for informado faculdade.</doc>
 <tag>Fluxo Alternativo</tag>
-<status status="PASS" starttime="20210526 23:04:38.223" endtime="20210526 23:04:42.827"/>
+<status status="PASS" starttime="20210526 23:36:51.208" endtime="20210526 23:36:55.620"/>
 </test>
 <test id="s1-s1-t3" name="CT003 - Help">
 <kw name="Help" library="Faculdade">
@@ -423,65 +426,65 @@ default folder is the log folder of RobotFramework, if you want change see the `
 <doc>Delete a entire contents in field at current cursor location and positions
 cursor at beginning of field. If you want to delete a field that is in
 another position, simply pass the coordinates "ypos"/"xpos" of any part of the field.</doc>
-<status status="PASS" starttime="20210526 23:04:42.837" endtime="20210526 23:04:42.839"/>
+<status status="PASS" starttime="20210526 23:36:55.624" endtime="20210526 23:36:55.624"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.836" endtime="20210526 23:04:42.839"/>
+<status status="PASS" starttime="20210526 23:36:55.624" endtime="20210526 23:36:55.624"/>
 </kw>
 <kw name="Write Bare In Position" library="Mainframe3270">
 <arg>${text}</arg>
 <arg>${y}</arg>
 <arg>${x}</arg>
 <doc>Send only the string to the screen at screen co-ordinates "ypos"/"xpos".</doc>
-<status status="PASS" starttime="20210526 23:04:42.839" endtime="20210526 23:04:42.839"/>
+<status status="PASS" starttime="20210526 23:36:55.624" endtime="20210526 23:36:55.626"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.833" endtime="20210526 23:04:42.839"/>
+<status status="PASS" starttime="20210526 23:36:55.624" endtime="20210526 23:36:55.626"/>
 </kw>
 <kw name="Transmitir" library="Mainframe">
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:42.841" level="INFO" html="true">&lt;iframe src="./screenshot_1622081082839.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:42.839" endtime="20210526 23:04:42.841"/>
+<msg timestamp="20210526 23:36:55.626" level="INFO" html="true">&lt;iframe src="./screenshot_1622083015626.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:55.626" endtime="20210526 23:36:55.626"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.839" endtime="20210526 23:04:42.841"/>
+<status status="PASS" starttime="20210526 23:36:55.626" endtime="20210526 23:36:55.626"/>
 </kw>
 <kw name="Send Enter" library="Mainframe3270">
 <doc>Send a Enter to the screen.</doc>
-<status status="PASS" starttime="20210526 23:04:42.841" endtime="20210526 23:04:43.591"/>
+<status status="PASS" starttime="20210526 23:36:55.626" endtime="20210526 23:36:56.349"/>
 </kw>
 <kw name="Capturar Screenshot" library="Mainframe">
 <kw name="Take Screenshot" library="Mainframe3270">
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<msg timestamp="20210526 23:04:43.595" level="INFO" html="true">&lt;iframe src="./screenshot_1622081083593.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
-<status status="PASS" starttime="20210526 23:04:43.591" endtime="20210526 23:04:43.595"/>
+<msg timestamp="20210526 23:36:56.353" level="INFO" html="true">&lt;iframe src="./screenshot_1622083016351.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<status status="PASS" starttime="20210526 23:36:56.349" endtime="20210526 23:36:56.353"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:43.591" endtime="20210526 23:04:43.595"/>
+<status status="PASS" starttime="20210526 23:36:56.349" endtime="20210526 23:36:56.353"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.839" endtime="20210526 23:04:43.597"/>
+<status status="PASS" starttime="20210526 23:36:55.626" endtime="20210526 23:36:56.355"/>
 </kw>
-<status status="PASS" starttime="20210526 23:04:42.833" endtime="20210526 23:04:43.597"/>
+<status status="PASS" starttime="20210526 23:36:55.622" endtime="20210526 23:36:56.355"/>
 </kw>
-<kw name="Terminar Suite" library="Base">
-<kw name="Fechar Terminal" library="Mainframe">
-<kw name="Close Connection" library="Mainframe3270">
-<doc>Disconnect from the host.</doc>
-<status status="PASS" starttime="20210526 23:04:43.599" endtime="20210526 23:04:43.599"/>
-</kw>
-<status status="PASS" starttime="20210526 23:04:43.597" endtime="20210526 23:04:43.599"/>
-</kw>
-<status status="PASS" starttime="20210526 23:04:43.597" endtime="20210526 23:04:43.599"/>
-</kw>
-<status status="PASS" starttime="20210526 23:04:42.831" endtime="20210526 23:04:43.599"/>
+<status status="PASS" starttime="20210526 23:36:55.622" endtime="20210526 23:36:56.355"/>
 </kw>
 <doc>Este caso de teste tem como objetivo validar o help.</doc>
 <tag>Fluxo Alternativo</tag>
-<status status="PASS" starttime="20210526 23:04:42.829" endtime="20210526 23:04:43.601"/>
+<status status="PASS" starttime="20210526 23:36:55.622" endtime="20210526 23:36:56.355"/>
 </test>
-<status status="PASS" starttime="20210526 23:04:26.917" endtime="20210526 23:04:43.603"/>
+<kw name="Terminar Suite" library="Base" type="TEARDOWN">
+<kw name="Fechar Terminal" library="Mainframe">
+<kw name="Close Connection" library="Mainframe3270">
+<doc>Disconnect from the host.</doc>
+<status status="PASS" starttime="20210526 23:36:56.361" endtime="20210526 23:36:56.361"/>
+</kw>
+<status status="PASS" starttime="20210526 23:36:56.359" endtime="20210526 23:36:56.363"/>
+</kw>
+<status status="PASS" starttime="20210526 23:36:56.359" endtime="20210526 23:36:56.363"/>
+</kw>
+<status status="PASS" starttime="20210526 23:36:39.904" endtime="20210526 23:36:56.363"/>
 </suite>
-<status status="PASS" starttime="20210526 23:04:26.896" endtime="20210526 23:04:43.605"/>
+<status status="PASS" starttime="20210526 23:36:39.883" endtime="20210526 23:36:56.369"/>
 </suite>
 <statistics>
 <total>

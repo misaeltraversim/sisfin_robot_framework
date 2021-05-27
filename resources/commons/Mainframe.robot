@@ -1,8 +1,8 @@
 *** Settings ***
 Variables        properties.py
 Library          Mainframe3270
-#Library          ../testresources/utils/utils
-#Library          ../testresources/utils/utilsMask
+#Library          ${EXECDIR}/testresources/utils/utils
+#Library          ${EXECDIR}/testresources/utils/utilsMask
 
 
 *** Variable ***
@@ -14,7 +14,7 @@ ${LIMPAR}         Clear
 *** Keywords ***
 Abrir Terminal
     Capturar Screenshot
-    Open Connection    ${MAINFRAME}
+    Open Connection    teague-tammvs1.tamu.edu  port= 992
     Sleep    8
     Capturar Screenshot
 

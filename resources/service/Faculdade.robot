@@ -44,4 +44,3 @@ Informar Action - B
 
 Help
     Digitar Help               ${Help}          ${HelpPosicao_x}             ${helpPosicao_Y}
-    Terminar Suite

@@ -1,6 +1,6 @@
 *** Settings ***
 Resource        ${EXECDIR}/resources/commons/Mainframe.robot
-Resource        ${EXECDIR}/resources/data/LoginData.robot
+Resource        ${EXECDIR}/resources/data/SistemaData.robot
 
 *** Variables ***
 ${sistema}      phonbook
@@ -8,7 +8,5 @@ ${posicao_x}    24
 ${posicao_y}    2
 
 *** Keywords ***
-Logar No Terminal
-    #Abrir Terminal
-    #Sleep  3
+Informar Sistema
     Acessar o Sistema       ${sistema}   ${posicao_x}   ${posicao_y}
