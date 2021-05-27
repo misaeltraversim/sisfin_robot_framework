@@ -2,10 +2,10 @@
 Resource         ${EXECDIR}/resources/commons/Base.robot
 Resource         ${EXECDIR}/resources/service/Sistema.robot
 Resource         ${EXECDIR}/resources/service/Faculdade.robot
+Resource         ${EXECDIR}/resources/service/Tso.robot
 
 Suite Setup     Conectar Emulador
 Suite Teardown  Terminar Suite
-
 
 *** Test Cases ***
 CT001 - Logar
