@@ -3,15 +3,17 @@ Resource        ${EXECDIR}/resources/commons/Mainframe.robot
 Resource        ${EXECDIR}/resources/testdata/Faculdade.robot
 
 *** Variables ***
-${faculdade}    F
-${posicao_x}    12
-${posicao_y}    34
+${faculdade}                F
+${faculdadePosicao_x}       12
+${faculdadePosicao_y}       34
 
 *** Keywords ***
 
 Informar Faculdade
-    #Selecionar Faculdade    ${faculdade}    ${posicao_x}   ${posicao_y}
-    Acessar o Sistema    F         12      34
+    Log To Console          ${faculdade}
+    Log To Console          ${faculdadePosicao_x}
+    Log To Console          ${faculdadePosicao_y}
+    Acessar o Sistema       ${faculdade}     ${faculdadePosicao_x}      ${faculdadePosicao_y}
 
 Informar Nome
     Acessar o Sistema    Texeira         20      7

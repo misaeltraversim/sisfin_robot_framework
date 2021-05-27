@@ -11,4 +11,4 @@ ${posicao_y}    2
 Logar No Terminal
     #Abrir Terminal
     #Sleep  3
-    Acessar o Sistema   ${sistema}   ${posicao_x}   ${posicao_y}
+    Acessar o Sistema       ${sistema}   ${posicao_x}   ${posicao_y}
