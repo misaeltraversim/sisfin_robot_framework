@@ -1,4 +1,4 @@
-# Testealta
+# Projeto Poc Caixa Alta
 
 Projeto de testa automatizado da alta plataforma.
 
