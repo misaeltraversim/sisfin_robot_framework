@@ -20,10 +20,10 @@ CT002 - Selecionar Faculdade
     [Documentation]  Este caso de teste tem como objetivo validar quando for informado faculdade.
     [Tags]           Fluxo Alternativo
     Informar Faculdade
-    Informar Nome
-    Informar na lista
-    Acionar Action
-    Acionar Action - B
+    Informar Sobrenome
+    Informar Sobrenome2
+    Informar Action
+    Informar Action - B
 
 CT003 - Help
     [Documentation]  Este caso de teste tem como objetivo validar o help.

@@ -1,6 +1,6 @@
 *** Settings ***
 Resource        ${EXECDIR}/resources/commons/Mainframe.robot
-Resource        ${EXECDIR}/resources/testdata/LoginDAO.robot
+Resource        ${EXECDIR}/resources/data/LoginData.robot
 
 *** Variables ***
 ${sistema}      phonbook
