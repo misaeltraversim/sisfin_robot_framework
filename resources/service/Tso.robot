@@ -59,9 +59,6 @@ Informar Comando no TSO
 
 Help TSO
     Executar Comando PF1
-<<<<<<< HEAD
-=======
     Verificar se existe                   HELP
->>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3
     Executar Comando PF7
     Executar Comando PF3

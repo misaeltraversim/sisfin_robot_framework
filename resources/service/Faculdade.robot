@@ -43,10 +43,4 @@ Informar Action - B
 
 Help
     Digitar Help               ${Help}          ${HelpPosicao_x}             ${helpPosicao_Y}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     Verificar se existe        ? = Will give further explanations on the use of the field.
-=======
->>>>>>> develop1
->>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3
