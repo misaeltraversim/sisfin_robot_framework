@@ -35,7 +35,7 @@ Informar TSO
 
 Informar Usuário no TSO
     Informar Usuário                      ${userid}           ${userid_x}         ${userido_y}
-
+       
 Informar Senha no TSO
     Informar Senha                        ${password}         ${password_x}       ${password_y}
 
