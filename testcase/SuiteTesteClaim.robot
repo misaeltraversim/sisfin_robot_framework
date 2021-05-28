@@ -9,7 +9,7 @@ Suite Teardown  Terminar Suite
 
 
 *** Test Cases ***
-#CT001 - Selecionar Claim
-#    [Documentation]  Este caso de teste tem como objetivo acessar o claim.
-#    [Tags]           Fluxo Alternativo
-#    Informar Claim
+CT001 - Selecionar Claim
+    [Documentation]  Este caso de teste tem como objetivo acessar o claim.
+    [Tags]           Fluxo Alternativo
+    Informar Claim

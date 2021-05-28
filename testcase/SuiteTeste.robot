@@ -9,22 +9,22 @@ Suite Setup     Conectar Emulador
 Suite Teardown  Terminar Suite
 
 *** Test Cases ***
-#CT001 - Logar
-#    [Documentation]  Este caso de teste tem como objetivo validar o acesso ao sistema "phonbook".
-#    [Tags]           Fluxo Principal
-#    Informar Sistema
+CT001 - Logar
+    [Documentation]  Este caso de teste tem como objetivo validar o acesso ao sistema "phonbook".
+    [Tags]           Fluxo Principal
+    Informar Sistema
 
-#CT002 - Selecionar Faculdade
-#    [Documentation]  Este caso de teste tem como objetivo validar quando for informado faculdade.
-#    [Tags]           Fluxo Alternativo
-#    Informar Faculdade
-#    Informar Sobrenome
-#    Informar Sobrenome2
-#    Informar Action
-#    Informar Action - B
+CT002 - Selecionar Faculdade
+    [Documentation]  Este caso de teste tem como objetivo validar quando for informado faculdade.
+    [Tags]           Fluxo Alternativo
+    Informar Faculdade
+    Informar Sobrenome
+    Informar Sobrenome2
+    Informar Action
+    Informar Action - B
 
 
-#CT003 - Help
-#    [Documentation]  Este caso de teste tem como objetivo validar o help.
-#    [Tags]           Fluxo Alternativo
-#    Help
+CT003 - Help
+    [Documentation]  Este caso de teste tem como objetivo validar o help.
+    [Tags]           Fluxo Alternativo
+    Help
