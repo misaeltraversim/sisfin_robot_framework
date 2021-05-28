@@ -24,5 +24,7 @@ InformarUserId
 
 InformarPasswordId
     Informar o passwordWy           ${password}     ${password_x}   ${password_y}
+
+VerificarMensagemDaTela
     Verificar se existe             ${mensagemUser}
     Log To Console                  ${mensagemUser}

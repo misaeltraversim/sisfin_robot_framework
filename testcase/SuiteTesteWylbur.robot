@@ -14,3 +14,4 @@ CT001 - Wylbur
     InformarWylbur
     InformarUserId
     InformarPasswordId
+    VerificarMensagemDaTela
