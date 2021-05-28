@@ -9,7 +9,7 @@ Suite Setup     Conectar Emulador
 Suite Teardown  Terminar Suite
 
 *** Test Cases ***
-CT001 - Logar
+CT001 - Logar1
     [Documentation]  Este caso de teste tem como objetivo validar o acesso ao sistema "phonbook".
     [Tags]           Fluxo Principal
     Informar Sistema
