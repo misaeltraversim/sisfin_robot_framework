@@ -4,6 +4,7 @@ Resource         ${EXECDIR}/resources/service/Sistema.robot
 Resource         ${EXECDIR}/resources/service/Faculdade.robot
 Resource         ${EXECDIR}/resources/service/Tso.robot
 
+
 Suite Setup     Conectar Emulador
 Suite Teardown  Terminar Suite
 
@@ -21,6 +22,7 @@ CT002 - Selecionar Faculdade
     Informar Sobrenome2
     Informar Action
     Informar Action - B
+
 
 CT003 - Help
     [Documentation]  Este caso de teste tem como objetivo validar o help.

@@ -25,9 +25,6 @@ ${helpPosicao_Y}            11
 *** Keywords ***
 
 Informar Faculdade
-    Log To Console             ${faculdade}
-    Log To Console             ${faculdadePosicao_x}
-    Log To Console             ${faculdadePosicao_y}
     Digitar Faculdade          ${faculdade}     ${faculdadePosicao_x}      ${faculdadePosicao_y}
 
 Informar Sobrenome
@@ -37,10 +34,10 @@ Informar Sobrenome2
     Digitar Sobrenome2         ${sobrenome1}    ${sobrenomePosicao_x1}      ${sobrenomePosicao_y1}
 
 Informar Action
-      Digitar Action           ${Action}        ${ActionePosicao_x}         ${ActionPosicao_Y}
+    Digitar Action             ${Action}        ${ActionePosicao_x}         ${ActionPosicao_Y}
 
 Informar Action - B
-    Digitar Action - B         ${Action2}       ${ActionPosicao_x1}          ${ActionPosicao_Y1}
+    Digitar Action - B         ${Action2}       ${ActionPosicao_x1}         ${ActionPosicao_Y1}
 
 Help
     Digitar Help               ${Help}          ${HelpPosicao_x}             ${helpPosicao_Y}
