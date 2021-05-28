@@ -49,19 +49,38 @@ Informar Comando
     Digitar Na Posicao   ${tso7}   ${x14}   ${y14}
     Tabular
 
+<<<<<<< HEAD
+#Colocar na Mainframe
+=======
+>>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3
 Executar Comando PF1
     Execute Command   ${PF1}
     Transmitir
     Transmitir
 
+<<<<<<< HEAD
+#Colocar na Mainframe
+=======
+>>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3
 Executar Comando PF3
     Execute Command   ${PF3}
     Capturar Screenshot
 
+<<<<<<< HEAD
+#Colocar na Mainframe
+=======
+>>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3
 Executar Comando PF7
     Execute Command   ${PF7}
     Capturar Screenshot
 
+<<<<<<< HEAD
+#Colocar na Mainframe
+Executar Comando PF8
+   Execute Command   ${PF8}
+   Capturar Screenshot
+=======
 Executar Comando PF8
      Execute Command   ${PF8}
      Capturar Screenshot
+>>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3

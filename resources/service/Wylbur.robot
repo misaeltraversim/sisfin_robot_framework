@@ -25,4 +25,3 @@ InformarUserId
 InformarPasswordId
     Informar o passwordWy           ${password}     ${password_x}   ${password_y}
     Verificar se existe             ${mensagemUser}
-    Log To Console                  ${mensagemUser}
