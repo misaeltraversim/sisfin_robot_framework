@@ -3,8 +3,6 @@ Resource                            Database.robot
 Resource                            Mainframe.robot
 
 *** Variable ***
-${PF3}                  PF(3)
-
 
 *** Keywords ***
 Conectar Emulador
@@ -13,7 +11,7 @@ Conectar Emulador
 
 #Foi criado o conectar 2 para execuções das suites após fechar o emulador para iniciar novas suites de testes.
 Conectar Emulador 2
-    Sleep    10
+   Sleep    10
     Open Connection     teague-tammvs1.tamu.edu  port= 992
     Sleep    10
 

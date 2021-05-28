@@ -59,5 +59,6 @@ Informar Comando no TSO
 
 Help TSO
     Executar Comando PF1
+    Verificar se existe                   HELP
     Executar Comando PF7
     Executar Comando PF3
