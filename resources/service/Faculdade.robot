@@ -26,9 +26,11 @@ ${helpPosicao_Y}            11
 
 Informar Faculdade
     Digitar Faculdade          ${faculdade}     ${faculdadePosicao_x}      ${faculdadePosicao_y}
+    Verificar se existe        Faculty
 
 Informar Sobrenome
     Digitar Sobrenome          ${sobrenome}     ${sobrenomePosicao_x}      ${sobrenomePosicao_y}
+    Verificar se existe        Search for Last Name Starting with
 
 Informar Sobrenome2
     Digitar Sobrenome2         ${sobrenome1}    ${sobrenomePosicao_x1}      ${sobrenomePosicao_y1}
@@ -41,3 +43,10 @@ Informar Action - B
 
 Help
     Digitar Help               ${Help}          ${HelpPosicao_x}             ${helpPosicao_Y}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    Verificar se existe        ? = Will give further explanations on the use of the field.
+=======
+>>>>>>> develop1
+>>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3

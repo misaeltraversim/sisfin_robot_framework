@@ -7,9 +7,12 @@ Library          Mainframe3270
 
 *** Variable ***
 ${MAINFRAME}      teague-tammvs1.tamu.edu  port= 992
-${PF3}            PF(3)
 ${END}            END
 ${LIMPAR}         Clear
+${PF1}            PF(1)
+${PF3}            PF(3)
+${PF7}            PF(7)
+${PF8}            PF(8)
 
 *** Keywords ***
 Abrir Terminal
@@ -107,3 +110,19 @@ Apagar Conteudo Campo Ocorrencia
     Execute Command  ${END}
     Tabular "1" Vezes
     Execute Command  ${END}
+
+Executar PF1
+    Execute Command   ${PF1}
+    Capturar Screenshot
+
+Executar PF3
+    Execute Command   ${PF3}
+    Capturar Screenshot
+
+Executar PF7
+    Execute Command   ${PF7}
+    Capturar Screenshot
+
+Executar PF8
+    Execute Command   ${PF8}
+    Capturar Screenshot

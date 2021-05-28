@@ -24,7 +24,10 @@ InformarUserId
 
 InformarPasswordId
     Informar o passwordWy           ${password}     ${password_x}   ${password_y}
+<<<<<<< HEAD
 
 VerificarMensagemDaTela
+=======
+>>>>>>> 2e3a278c7894a9805dda2d07cb05ba2010bbdcc3
     Verificar se existe             ${mensagemUser}
     Log To Console                  ${mensagemUser}
