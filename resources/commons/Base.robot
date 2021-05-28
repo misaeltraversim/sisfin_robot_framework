@@ -3,8 +3,6 @@ Resource                            Database.robot
 Resource                            Mainframe.robot
 
 *** Variable ***
-${PF3}                  PF(3)
-
 
 *** Keywords ***
 Conectar Emulador
