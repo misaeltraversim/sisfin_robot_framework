@@ -10,8 +10,8 @@ ${useridWy}                teste
 ${userid_x}                   6
 ${userido_y}                  12
 ${password}                Teste10
-${password_x}                 8
-${password_y}                20
+${password_x1}                 7
+${password_y1}                13
 ${mensagemUser}              USERID UNKNOWN TO RACF
 
 
@@ -23,5 +23,5 @@ InformarUserId
     Informar o userIdWy             ${useridWy}     ${userid_x}     ${userido_y}
 
 InformarPasswordId
-    Informar o passwordWy           ${password}     ${password_x}   ${password_y}
+    Informar o passwordWy           ${password}     ${password_x1}   ${password_y1}
     Verificar se existe             ${mensagemUser}
