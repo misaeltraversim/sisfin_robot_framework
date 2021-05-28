@@ -4,7 +4,7 @@ Resource         ${EXECDIR}/resources/service/Claim.robot
 
 
 
-Suite Setup     Conectar Emulador 3
+Suite Setup     Conectar Emulador 2
 Suite Teardown  Terminar Suite
 
 
