@@ -35,7 +35,7 @@ Informar TSO
 
 Informar Usuário no TSO
     Informar Usuário                      ${userid}           ${userid_x}         ${userido_y}
-       
+
 Informar Senha no TSO
     Informar Senha                        ${password}         ${password_x}       ${password_y}
 
@@ -59,5 +59,6 @@ Informar Comando no TSO
 
 Help TSO
     Executar Comando PF1
+    Verificar se existe                   HELP 
     Executar Comando PF7
     Executar Comando PF3
