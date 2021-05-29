@@ -2,10 +2,10 @@
 <projectConfiguration>
     <configVersion>2</configVersion>
     <relativeTo>WORKSPACE</relativeTo>
-    <referencedLibrary type="PYTHON" name="Mainframe3270" path="C:/python37/Lib/site-packages/Mainframe3270/__init__.py" dynamic="false"/>
-    <referencedLibrary type="PYTHON" name="DatabaseLibrary" path="C:/python37/Lib/site-packages/DatabaseLibrary/__init__.py" dynamic="false"/>
-    <referencedLibrary type="PYTHON" name="utils" path="testalta/testresources/utils/utils.py" dynamic="false"/>
-    <referencedLibrary type="PYTHON" name="utilsMask" path="testalta/testresources/utils/utilsMask.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="Mainframe3270" path="C:/python37/Lib/site-packages/Mainframe3270/__init__.py" dynamic="true"/>
+    <referencedLibrary type="PYTHON" name="DatabaseLibrary" path="C:/python37/Lib/site-packages/DatabaseLibrary/__init__.py" dynamic="true"/>
+    <referencedLibrary type="PYTHON" name="utils" path="testalta/testresources/utils/utils.py" dynamic="true"/>
+    <referencedLibrary type="PYTHON" name="utilsMask" path="testalta/testresources/utils/utilsMask.py" dynamic="true"/>
     <pythonpath>
         <path location="C:\Robot\testealta"/>
     </pythonpath>

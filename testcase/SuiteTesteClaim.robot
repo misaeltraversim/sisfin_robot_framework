@@ -9,5 +9,10 @@ Suite Teardown  Terminar Suite
 *** Test Cases ***
 CT001 - Selecionar Claim
     [Documentation]  Este caso de teste tem como objetivo acessar o claim.
-    [Tags]           Fluxo Alternativo
+    [Tags]           Fluxo Principal
     Informar Claim
+
+CT002 - Informar ID - Inválido
+    [Documentation]  Este caso de teste tem como objetivo validar quando for informado um ID inválido
+    [Tags]           Fluxo Exceção
+    Informar ID Claim
