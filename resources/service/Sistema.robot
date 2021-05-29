@@ -9,4 +9,5 @@ ${posicao_y}    2
 
 *** Keywords ***
 Informar Sistema
+    Verificar se existe     enter application or EXIT 
     Acessar o Sistema       ${sistema}   ${posicao_x}   ${posicao_y}

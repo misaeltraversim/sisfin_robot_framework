@@ -1,21 +1,18 @@
-# Projeto Poc Caixa Alta
+# Projeto POC Caixa Alta
 
 Projeto de testa automatizado da alta plataforma.
 
 ROBOT
 Executar diretorio na pasta
-robot -d./testcase/logs testcase
-
-Executar diretorio e apenas um arquivo dentro dele
-robot -d./testcase/logs\ login.robot
+robot -d./tests/logs testcase
 
 Executar diretorio na pasta e apenas um arquivo dentro dele
-robot -d ./logs tests\TestesNoSite.robot
+robot -d ./logs tests\SuiteTesteTso.robot
 
 Executar um unico teste
 robot -t "Cenario 1: Acessar Minha Conta" tests
 
-Executar variavel
+Executar variável
 robot -v NAVEGADOR:chorme tests
 
 Combinar comandados
@@ -24,7 +21,7 @@ Executar diretorio na pasta, apenas um arquivo dentro dele e um unico teste
 
 robot -d ./logs -t "Cenario 1: Acessar Minha Conta" tests
 
-Executar diretorio na pasta, apenas um arquivo dentro dele, um unico teste e uma variavél
+Executar diretorio na pasta, apenas um arquivo dentro dele, um unico teste e uma variável
 
 robot -d ./logs -t "Cenario 1: Acessar Minha Conta" -v NAVEGADOR:chorme tests
 

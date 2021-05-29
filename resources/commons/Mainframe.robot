@@ -1,8 +1,8 @@
 *** Settings ***
 Variables        properties.py
 Library          Mainframe3270
-#Library          ${EXECDIR}/testresources/utils/utils
-#Library          ${EXECDIR}/testresources/utils/utilsMask
+#Library          ${EXECDIR}/utils/utils
+#Library          ${EXECDIR}/utils/utilsMask
 
 
 *** Variable ***
