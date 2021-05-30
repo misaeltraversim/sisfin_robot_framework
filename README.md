@@ -4,7 +4,7 @@ Projeto de testa automatizado da alta plataforma.
 
 ROBOT
 Executar diretorio na pasta
-robot -d./tests/logs tests
+robot -d./logs tests
 
 Executar diretorio na pasta e apenas um arquivo dentro dele
 robot -d ./logs tests\SuiteTesteTso.robot
