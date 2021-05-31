@@ -3,21 +3,24 @@
 Projeto de testa automatizado da alta plataforma.
 
 ROBOT
-Executar diretorio na pasta
+*Executar diretorio na pasta
 robot -d./logs tests
+//(Argumento -d é um comando de output do robot para execução do diretório.  O comando ./logs serve para o robot criar uma estrutura de logs dentro do projeto e guardar todo relatório de teste dentro dessa pasta)
 
-Executar diretorio na pasta e apenas um arquivo dentro dele
+*Executar diretório na pasta e apenas um arquivo dentro dele
 robot -d ./logs tests\SuiteTesteTso.robot
 
-Executar um unico teste
+*Executar teste de um cenário específico
 robot -t "Cenario 1: Acessar Minha Conta" tests
+//(Argumento -t é um comando de output do robot que indica a execução de cenário)
+
 
 Executar variável
 robot -v NAVEGADOR:chorme tests
 
-Combinar comandados
+*Combinar comandados
 
-Executar diretorio na pasta, apenas um arquivo dentro dele e um unico teste
+Executar diretorio na pasta, apenas um arquivo dentro dele e um único teste
 
 robot -d ./logs -t "Cenario 1: Acessar Minha Conta" tests
 
@@ -25,9 +28,10 @@ Executar diretorio na pasta, apenas um arquivo dentro dele, um unico teste e uma
 
 robot -d ./logs -t "Cenario 1: Acessar Minha Conta" -v NAVEGADOR:chorme tests
 
-Comandos GIT
 
-GIT Clone
+C O M A N D O S  GIT
+
+GIT Clone ()
 
 Exemplo
 git clone https://gitlab.com/robot18/poccaixaweb.git
