@@ -22,7 +22,7 @@ CT002 - Selecionar Faculdade
     Informar Sobrenome2
     Informar Action
     Informar Action - B
-
+    
 
 CT003 - Help
     [Documentation]  Este caso de teste tem como objetivo validar o help.
