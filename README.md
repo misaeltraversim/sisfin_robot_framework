@@ -3,21 +3,24 @@
 Projeto de testa automatizado da alta plataforma.
 
 ROBOT
-Executar diretorio na pasta
+*Executar diretorio na pasta
 robot -d./logs tests
+//(Argumento -d é um comando de output do robot para execução do diretório.  O comando ./logs serve para o robot criar uma estrutura de logs dentro do projeto e guardar todo relatório de teste dentro dessa pasta)
 
-Executar diretorio na pasta e apenas um arquivo dentro dele
+*Executar diretório na pasta e apenas um arquivo dentro dele
 robot -d ./logs tests\SuiteTesteTso.robot
 
-Executar um unico teste
+*Executar teste de um cenário específico
 robot -t "Cenario 1: Acessar Minha Conta" tests
+//(Argumento -t é um comando de output do robot que indica a execução de cenário)
+
 
 Executar variável
 robot -v NAVEGADOR:chorme tests
 
-Combinar comandados
+*Combinar comandados
 
-Executar diretorio na pasta, apenas um arquivo dentro dele e um unico teste
+Executar diretorio na pasta, apenas um arquivo dentro dele e um único teste
 
 robot -d ./logs -t "Cenario 1: Acessar Minha Conta" tests
 
@@ -25,9 +28,10 @@ Executar diretorio na pasta, apenas um arquivo dentro dele, um unico teste e uma
 
 robot -d ./logs -t "Cenario 1: Acessar Minha Conta" -v NAVEGADOR:chorme tests
 
-Comandos GIT
 
-GIT Clone
+C O M A N D O S  GIT
+
+GIT Clone ()
 
 Exemplo
 git clone https://gitlab.com/robot18/poccaixaweb.git
@@ -41,7 +45,7 @@ Iniciando um repositório
 
 Após informar a pasta
 
-git init (para iniciar)
+git init (Iniciar um repositório)
 
 
 git status (Ver alterações)
@@ -58,7 +62,7 @@ git log
 
 
 
-Desfazer
+*Desfazer
 
 git reset HEAD(Voltar para o contexto onde estou)
 
@@ -71,19 +75,20 @@ git reset --mixed ()
 git reset --hard Nº do commite
 
 
-Brach
+Branch (ramo)
+//Os repositórios no GitHub funcionam como uma árvore. Quando criamos um repositório, ele automaticamente é iniciado com a branch master, que é equivalente ao tronco da sua árvore, ou seja, é a parte principal do seu projeto. As próximas branches são secundárias e, portanto, ramos da branch master.
 
-Criando uma nova branch:
+*Criando uma nova branch:
 
 git branch <nome-do-branch>
-Este comando criará uma branch localmente. Para enviar a nova branch para o repositório remoto, você precisa usar o seguinte comando:
+//Este comando criará uma branch localmente. Para enviar a nova branch para o repositório remoto, você precisa usar o seguinte comando:
 
 git push -u <remote> <nome-da-branch>
 Para ver as branches:
 
 git branch or git branch --list
 
-Deletando uma branch:
+*Deletando uma branch:
 git branch -d <nome-da-branch>
 
 git remote add origin https://github.com/MuriloCarlos/xxx.git
@@ -92,7 +97,7 @@ git push -u origin master
 
 
 Git Checkout
-Este é um dos comandos Git mais usados. Para trabalhar em uma branch, primeiro você precisa mudar para ela.
+//Este é um dos comandos Git mais usados. Para trabalhar em uma branch, primeiro você precisa mudar para ela.
 
 Usamos o git checkout principalmente para alternar de um branch para outro. Também podemos usá-lo para verificar arquivos e commits:
 
@@ -103,12 +108,13 @@ git checkout <nome-da-branch>
 Há também um comando de atalho que permite criar e trocar para um branch ao mesmo tempo:
 
 git checkout -b <nome-da-branch>
-Git Status
+
+*Git Status
 O comando status do Git fornece todas as informações necessárias sobre o branch atual.
 
 git status
 Git Add
-Quando criamos, modificamos ou excluímos um arquivo, essas alterações ocorrerão em nosso ambiente local e não serão incluídas no próximo commit (a menos que alteremos as configurações).
+//Quando criamos, modificamos ou excluímos um arquivo, essas alterações ocorrerão em nosso ambiente local e não serão incluídas no próximo commit (a menos que alteremos as configurações).
 
 Precisamos usar o comando git add para incluir as alterações de um arquivo em nosso próximo commit.
 
@@ -118,10 +124,10 @@ git add <arquivo>
 Para adicionar tudo de uma vez:
 
 git add -A
-O comando git add não altera o repositório e as alterações não são salvas até usarmos o git commit.
+//O comando git add não altera o repositório e as alterações não são salvas até usarmos o git commit.
 
 Git Commit
-Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário.
+//Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário.
 
 git commit -m "mensagem explicando a mudança no código"
 Git Push
@@ -140,7 +146,7 @@ Este comando é uma combinação de git fetch e git merge, o que significa que, 
 
 git pull <remote>
 Git Revert
-Existem várias maneiras de desfazer nossas alterações local ou remotamente (depende do que precisamos), mas devemos usar esses comandos com cuidado para evitar problemas.
+//Existem várias maneiras de desfazer nossas alterações local ou remotamente (depende do que precisamos), mas devemos usar esses comandos com cuidado para evitar problemas.
 
 Uma maneira segura de desfazer os commits é usando git revert.
 
@@ -149,6 +155,6 @@ O número do hash pode ser conseguido pelo comando:
 
 git log -- oneline
 Git Merge
-Quando você conclui o desenvolvimento em sua branch e tudo funciona bem, a etapa final é mesclar as branches, isso é feito com o comando git merge.
+//Quando você conclui o desenvolvimento em sua branch e tudo funciona bem, a etapa final é mesclar as branches, isso é feito com o comando git merge.
 
 git merge <nome-da-branch>
